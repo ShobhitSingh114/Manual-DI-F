@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.dagger.hilt)
+//    alias(libs.plugins.kotlin.kapt))
+    id("kotlin-kapt")
+//    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -66,4 +70,12 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+//    implementation("com.google.dagger:hilt-android:2.45")
+    implementation(libs.hilt.implementation)
+//    kapt("com.google.dagger:hilt-android-compiler:2.45")
+    kapt(libs.kapt.dagger.hilt.compiler)
+//    kapt("androidx.hilt:hilt-compiler:1.0.0")
+    kapt(libs.kapt.hilt.compiler)
+
 }
