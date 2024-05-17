@@ -78,4 +78,16 @@ dependencies {
 //    kapt("androidx.hilt:hilt-compiler:1.0.0")
     kapt(libs.kapt.hilt.compiler)
 
+
+
+//    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+    implementation(libs.viewmodel.compose)
+//    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation(libs.retrofit)
+//    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation(libs.gson)
+//    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+    implementation(libs.hilt.navigation.compose)
+
+
 }
